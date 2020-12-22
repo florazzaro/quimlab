@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Experimentos </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo1.css">
+	<link rel="stylesheet" href="responsiveslides.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+
+  <script>
+  	$(function () {
+
+  	      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+
+  </script>
+
+
+</head>
+<body>
+	<main>
+		<header>
+		<div id="logo"><a href="index.html"><img src="img/logo.png"></div></a>
+		<nav>
+		<div>
+			<ul>
+			<li>
+				<a href="videos.html">
+					<img src="img/video.png" id="botonera">
+				</a>
+
+				<a href="datos.html">
+					<img src="img/datos.png" id="botonera">
+				</a>
+
+				<a href="experimentos.html">
+					<img src="img/experimentos.png" id="botonera">
+				</a>
+			</li>
+			</ul>
+		</div>
+		</header>
+
+		<section>
+			<br>
+			<div id="entrada">
+				<br>
+				<h2>Experimentos para niños</h2>
+				<br>
+				<p class="entrada">
+					Si está buscando <b> experimentos científicos</b>  divertidos para niños, este es el lugar correcto. Esta sección está llena de fascinantes experimentos prácticos que son una excelente manera de disfrutar del mundo de la ciencia.
+					<br>
+					Descubrirá que se pueden realizar muchos experimentos utilizando ingredientes que se encuentran en la casa <em>(con la supervisión de un adulto, por supuesto</em>).
+				</p>
+			</div>
+
+			<div class="callbacks_container" id="container">
+		      <ul class="rslides" id="slider4">
+		        <li>
+		          <img src="img/img1.jpg" alt="">
+		          <p class="caption">Volcán de espuma</p>
+		        </li>
+		        <li>
+		          <img src="img/img2.jpg" alt="">
+		          <p class="caption">Hielo brillante</p>
+		        </li>
+		        <li>
+		          <img src="img/img3.jpg" alt="">
+		          <p class="caption">El agua que camina (capilaridad y mezcla de colores)</p>
+		        </li>
+		        <li>
+		          <img src="img/img4.jpg" alt="">
+		          <p class="caption">Tinta invisible</p>
+		        </li>
+		        <li>
+		          <img src="img/img5.jpg" alt="">
+		          <p class="caption">Arcoiris liquido</p>
+		        </li>
+		        <li>
+		          <img src="img/img6.jpg" alt="">
+		          <p class="caption">Pintura esponjosa</p>
+		        </li>
+		        <li>
+		          <img src="img/img7.jpg" alt="">
+		          <p class="caption">Reacción del hielo seco en agua</p>
+		        </li>
+		        <li>
+		          <img src="img/img8.png" alt="">
+		          <p class="caption">Niña científica</p>
+		        </li>
+		      </ul>
+		    </div>
+
+			
+			<div id="experimentos">
+				<h3>Limonada mágica</h3>
+				<br>
+				<img src="img/limonada.jpg" class="imgexp">
+				<p class="experimentos">Consigue hacer cambiar el color de la limonada con una sencilla reacción química que transforma el color violeta en rosa.</p>
+			</div>
+
+			<div id="experimentos">
+				<h3>Tinta invisible</h3>
+				<br>
+				<img src="img/tinta.jpg" class="imgexp">
+				<p class="experimentos">Juega a los detectives creando mensajes secretos que solo los mejores investigadores podrán resolver. Te orprenderá saber cómo los alimentos permiten crear tinta mágica.</p>
+			</div>
+
+			<div id="experimentos">
+				<h3>Volcan de espuma</h3>
+				<br>
+				<img src="img/volcan.jpg" class="imgexp">
+				<p class="experimentos">Haz que la espuma del jabón se convierta en lava y salga de su frasco con este experimento que mezclan el vinagre y el bicarbonato.</p>
+			</div>
+
+			<div id="experimentos">
+				<h3>Hielo brillante</h3>
+				<br>
+				<img src="img/hielo.jpg" class="imgexp">
+				<p class="experimentos">Diversión con este experimento, pensado para los de menor edad. Uniendo la ciencia, la actividad sensorial y la creatividad para hacer que el hielo brille.</p>
+			</div>
+
+		</section>
+
+		<footer>
+			<a href="micrositio/micrositio.html" class="nombre1"><p class="nombre"> María Florencia Azzaro </p></a>
+			<div id="redes">
+				<a href="#" class="link"> <img src="img/facebook.png"> </a>
+				<a href="#" class="link"> <img src="img/instagram.png"> </a>
+				<a href="#" class="link"> <img src="img/twitter.png"> </a>
+				<a href="#" class="link"> <img src="img/youtube.png"> </a>
+			</div>
+		</footer>
+
+	</main>
+
+</body>
+</html>

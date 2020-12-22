@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Datos </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo1.css">
+	<link rel="stylesheet" href="responsiveslides.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+
+  <script>
+  	$(function () {
+
+  	      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+	<main>
+		<header>
+		<div id="logo"><a href="index.html"><img src="img/logo.png"></div></a>
+		<nav>
+		<div>
+			<ul>
+			<li>
+				<a href="videos.html">
+					<img src="img/video.png" id="botonera">
+				</a>
+
+				<a href="datos.html">
+					<img src="img/datos.png" id="botonera">
+				</a>
+
+				<a href="experimentos.html">
+					<img src="img/experimentos.png" id="botonera">
+				</a>
+			</li>
+			</ul>
+		</div>
+		</header>
+
+		<section>
+			<br>
+			<div id="entrada">
+				<br>
+				<h2>Datos sobre ciencia</h2>
+				<br>
+				<p class="entrada">
+					Disfrute de nuestros divertidos <b> datos científicos </b> para los niños. Podes aprender datos interesantes sobre la tierra, datos asombrosos sobre la química, datos increíble sobre el espacio, datos divertidos sobre animales y muchas cosas más. <em> ¿Sabías que las orejas de un grillo están ubicadas en sus patas delanteras?</em>
+					<br>
+					La ciencia es un tema fascinante con muchas cosas asombrosas que aprender y descubrir.
+					
+				</p>
+			</div>
+
+			<div class="callbacks_container" id="container">
+		      <ul class="rslides" id="slider4">
+		        <li>
+		          <img src="img/dato1.jpg" alt="">
+		          <p class="caption">Aurora polar</p>
+		        </li>
+		        <li>
+		          <img src="img/dato2.jpg" alt="">
+		          <p class="caption">Oso panda gigante</p>
+		        </li>
+		        <li>
+		          <img src="img/dato3.jpg" alt="">
+		          <p class="caption">Mezcla entre agua y aceite</p>
+		        </li>
+		        <li>
+		          <img src="img/dato4.jpg" alt="">
+		          <p class="caption">Lanzamiento del Transbordador Espacial Nasa</p>
+		        </li>
+		        <li>
+		          <img src="img/dato5.jpg" alt="">
+		          <p class="caption">Lado oscuro de la Luna</p>
+		        </li>
+		        <li>
+		          <img src="img/dato6.jpg" alt="">
+		          <p class="caption">Gorilla</p>
+		        </li>
+		        <li>
+		          <img src="img/dato7.jpg" alt="">
+		          <p class="caption">Cueva de piedra Amatista</p>
+		        </li>
+		        <li>
+		          <img src="img/dato8.jpg" alt="">
+		          <p class="caption">Planeta Saturno</p>
+		        </li>
+		        <li>
+		          <img src="img/dato9.jpg" alt="">
+		          <p class="caption">Globos llenos de helio, por eso flotan</p>
+		        </li>
+		        <li>
+		          <img src="img/dato10.jpg" alt="">
+		          <p class="caption">Aconcagua, montaña en Argentina</p>
+		        </li>
+		      </ul>
+		    </div>
+
+			<div id="datos">
+				<h3>Química</h3> <img src="">
+				<br>
+				<ul class="ubicacion">
+					<li>
+						<p class="datos">Al rededor del 1% de la masa solar es oxigeno.</p>
+					</li>
+					<li>
+						<p class="datos">Aceite y agua no se mezclan.</p>
+					</li>
+					<li>
+						<p class="datos">El helio es más ligero que el aire, por eso flota.</p>
+					</li>
+					<li>
+						<p class="datos">Reacciones química ocurren todo el tiempo, incluso en cosas normales, como cocinar.</p>
+					</li>
+				</ul>
+			</div>
+
+			<div id="datos">
+				<h3>La Tierra</h3> <img src="">
+				<br>
+				<ul class="ubicacion">
+					<li>
+						<p class="datos">Magma es la roca liquida caliente debajo de la superficie de la Tierra.</p>
+					</li>
+					<li>
+						<p class="datos">El desierto más grande del mundo es el Sahara.</p>
+					</li>
+					<li>
+						<p class="datos">La selva Amazónica es la selva tropical más grande de la Tierra.</p>
+					</li>
+				</ul>
+			</div>
+
+			<div id="datos">
+				<h3>El espacio</h3> <img src="">
+				<br>
+				<ul class="ubicacion">
+					<li>
+						<p class="datos">Venus es el planeta más caliente del Sistema Solar.</p>
+					</li>
+					<li>
+						<p class="datos">El sol es 300000 veces más grande que la Tierra.</p>
+					</li>
+					<li>
+						<p class="datos">El Sistema Solar se formó hace unos 4.600 millones de años.</p>
+					</li>
+					<li>
+						<p class="datos">La Luna orbita la Tierra cada 27,3 días.</p>
+					</li>
+				</ul>
+			</div>
+
+			<div id="datos">
+				<h3>Animales</h3> <img src="">
+				<br>
+				<ul class="ubicacion">
+					<li>
+						<p class="datos">Los caballos y las vacas duermen parados.</p>
+					</li>
+					<li>
+						<p class="datos">El perro tiene la audición mayor a la de los humanos.</p>
+					</li>
+					<li>
+						<p class="datos">Los elefantes son el mamífero terrestre más grande.</p>
+					</li>
+					<li>
+						<p class="datos">Los cheetas solo toman agua una vez cada 3 o 4 días.</p>
+					</li>
+				</ul>
+			</div>
+
+
+		</section>
+
+		<footer>
+			<a href="micrositio/micrositio.html" class="nombre1"><p class="nombre"> María Florencia Azzaro </p></a>
+			<div id="redes">
+				<a href="#" class="link"> <img src="img/facebook.png"> </a>
+				<a href="#" class="link"> <img src="img/instagram.png"> </a>
+				<a href="#" class="link"> <img src="img/twitter.png"> </a>
+				<a href="#" class="link"> <img src="img/youtube.png"> </a>
+			</div>
+		</footer>
+
+	</main>
+
+</body>
+</html>
